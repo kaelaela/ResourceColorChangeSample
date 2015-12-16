@@ -16,12 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initToolbar();
-        findViewById(R.id.change_button).setOnClickListener(this);
-    }
-
-    private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        findViewById(R.id.change_button).setOnClickListener(this);
     }
 
     @Override
